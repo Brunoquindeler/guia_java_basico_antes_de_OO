@@ -1,5 +1,10 @@
 # Guia Java Básico que precisa saber antes de Orientação a Objetos
+
 Um guia com informações da linguagem e sintaxe de comandos **Java** básicos e mais utilizados.
+
+Como um guia básico, vale ressaltar que não cobre todas as funcionalidades disponiveis na linguagem.
+
+**[Tutoriais Oficiais para Consultas mais Especificas](https://docs.oracle.com/javase/tutorial/java/index.html)**
 
 **[Veja na Web](https://brunoquindeler.github.io/guia_java_basico_antes_de_OO)**
 
@@ -45,6 +50,28 @@ Um guia com informações da linguagem e sintaxe de comandos **Java** básicos e
 
     Tipos Especiais:
         String: ""
+```
+## Casting
+```java
+Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valor.
+    Sintaxe:
+        Tipo Identificador = (Tipo para Casting) Valor;
+    Ex:
+        int x = (int) 2.5; // x = 2
+
+    ‎Ampliação do Casting (automaticamente) - convertendo um tipo menor em um tamanho de tipo maior‎
+    byte -> short -> char -> int -> long -> float -> double
+
+        int myInt = 9;
+        double myDouble = myInt; // 9.0 -- Casting automático de int para double
+
+    ‎Estreitando o Casting (manualmente) - convertendo um tipo maior em um tipo de tamanho menor‎
+    double -> float -> long -> int -> char -> short -> byte
+
+        double myDouble = 9.0;
+        int myInt = (int) myDouble; // Casting manual de double para int
+
+    - REF: https://www.w3schools.com/java/java_type_casting.asp
 ```
 ## Caracteres Especiais
 ```java
@@ -331,7 +358,7 @@ Um guia com informações da linguagem e sintaxe de comandos **Java** básicos e
 
 
     -For Each-
-        for (item : array)
+        for (Tipo Apelido : Colecao)
             comando
 
         Ex:
@@ -377,7 +404,63 @@ Um guia com informações da linguagem e sintaxe de comandos **Java** básicos e
                 contador++;
             }
 ```
+## Vetores e Matrizes
+```java
+Sintaxe:
+    Tipo[] Identificador = {valor1, valor2, ..., nVALOR};
+    Ou:
+    Tipo[] Identificador = new Tipo[TAMANHO DO VETOR];
 
+    Ex:
+        String[] frutas = {"pera", "maçã", "banana"};
+        Ou:
+        String[] frutas = new String[3]; // Cria um vetor de 3 posições com valores Default  
+        
+        // Para acessar e modificar valores \/
+        frutas[0] = "pera";
+        frutas[1] = "maçã";
+        frutas[2] = "banana";
+        System.out.println(frutas[0]); // pera
+        System.out.println(frutas[1]); // maçã
+        System.out.println(frutas[2]); // banana
+
+        Para adicionar uma matriz basta colocar dois ou mais colchetes dependendo da dimensão da matriz
+        String[][] alimentos = new String[2][3]; // Matriz 2/3
+        alimentos[0][0] = "pera";
+        alimentos[0][1] = "maçã";
+        alimentos[0][2] = "banana";
+        alimentos[1][0] = "arroz";
+        alimentos[1][1] = "feijão";
+        alimentos[1][2] = "macarrão";
+```
+## Listas
+```java
+import java.util.List;
+
+Sintaxe:
+    List<TIPO WRAPPER> Identificador = new CLASSE DE IMPLEMENTACAO<>();
+    // CLASSES DE IMPLEMENTACAO: AbstractList, AbstractSequentialList, ArrayList, AttributeList, CopyOnWriteArrayList, LinkedList, RoleList, RoleUnresolvedList, Stack, Vector
+
+    Ex:
+        List<String> frutas = new ArrayList<>(); // import java.util.ArrayList;
+
+    Operações:
+        add(0, "pera") // adiciona pera na posição 0
+        add(1, "uva") // adiciona uva na posição 1
+        add(2, "abacaxi")  // adiciona abacaxi na posição 3
+        add("morango") // Adiciona morango na primeira posição disponivel
+        remove(1) // remove o item uva da posição 1
+        clear() // limpa a Lista
+        contains("abacaxi") // Retorna true se contem abacaxi na lista
+        get(2) // retorna abacaxi o valor do item na posição 2
+        set(2, "mamão") // Modifica o item na posição 2
+        isEmpty() // Retorna se a lista está vazia
+        size() // Retorna o tamanho a lista
+
+        - Consulte o link abaixo para outras operações.
+
+    - REF: https://docs.oracle.com/javase/10/docs/api/java/util/List.html
+```
 ## Palavras Reservadas
 ```java
 Modificadores de acesso:
