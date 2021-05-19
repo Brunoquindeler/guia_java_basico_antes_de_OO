@@ -6,8 +6,6 @@ Como um guia básico, vale ressaltar que não cobre todas as funcionalidades dis
 
 **[Tutoriais Oficiais para Consultas mais Especificas](https://docs.oracle.com/javase/tutorial/java/index.html)**
 
-**[Veja na Web](https://brunoquindeler.github.io/guia_java_basico_antes_de_OO)**
-
 ## Restrições e Convenções
 ```java
     Nomes de variáveis:
