@@ -6,6 +6,8 @@ Como um guia básico, vale ressaltar que não cobre todas as funcionalidades dis
 
 **[Tutoriais Oficiais para Consultas mais Especificas](https://docs.oracle.com/javase/tutorial/java/index.html)**
 
+A maioria das informações foram absorvidas do curso " **[Java COMPLETO Programação Orientada a Objetos +Projetos](https://www.udemy.com/course/java-curso-completo/learn/lecture/10566104#content)** " na Udemy.
+
 ## Restrições e Convenções
 ```java
     Nomes de variáveis:
@@ -367,7 +369,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
 ## Funções ou Métodos
 ```java
     Sintaxe:
-        [Modificador de acesso] [Tipo] [Identificador] (Tipo Parametro) {
+        [Encapsulamento] [Tipo] [Identificador] (Tipo Parametro) {
             Bloco de comandos
             return; // O retorno depende do Tipo do método
         }
@@ -573,5 +575,3 @@ Literais reservados:
 
 REF: http://www.linhadecodigo.com.br/artigo/83/as-52-palavras-reservadas-do-java.aspx
 ```
-
-A maioria das informações foram absorvidas do curso " **[Java COMPLETO Programação Orientada a Objetos +Projetos](https://www.udemy.com/course/java-curso-completo/learn/lecture/10566104#content)** " na Udemy.
