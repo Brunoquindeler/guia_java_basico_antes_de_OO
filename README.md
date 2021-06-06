@@ -8,7 +8,29 @@ Como um guia básico, vale ressaltar que não cobre todas as funcionalidades dis
 
 A maioria das informações foram absorvidas do curso " **[Java COMPLETO Programação Orientada a Objetos +Projetos](https://www.udemy.com/course/java-curso-completo/learn/lecture/10566104#content)** " na Udemy.
 
-## Restrições e Convenções
+# Sumário
+1. [Restrições e Convenções](#resteconv)
+2. [Comentários](#comentarios)
+3. [Tipos e Valores Defaults](#tiposvaloresdefault)
+4. [Casting](#casting)
+5. [Caracteres Especiais](#caracteresespeciais)
+6. [Locale](#locale)
+7. [Scanner](#scanner)
+8. [Math](#math)
+9. [Strings](#string)
+10. [Operadores](#operadores)
+11. [If Else](#ifelse)
+12. [Switch Case](#switchcase)
+13. [Expressão Condicional Ternária](#ternario)
+14. [While](#while)
+15. [Do While](#dowhile)
+16. [For e ForEach](#for)
+17. [Funções ou Métodos](#funcs)
+18. [Vetores e Matrizes](#vetores)
+19. [Listas](#listas)
+20. [Palavras Reservadas](#palavrasreservadas)
+
+## Restrições e Convenções <a name="resteconv"></a>
 ```java
     Nomes de variáveis:
         Não pode começar com dígito: 1hora, 24horas, 4fun 
@@ -28,7 +50,7 @@ A maioria das informações foram absorvidas do curso " **[Java COMPLETO Program
         PascalCase: CortadorDeGrama
             - Classes
 ```
-## Comentários
+## Comentários <a name="comentarios"></a>
 ```java
     // < Comentário de linha
 
@@ -40,7 +62,7 @@ A maioria das informações foram absorvidas do curso " **[Java COMPLETO Program
 
     Os * dentro do bloco são opcionais.
 ```
-## Tipos e Valores Defaults
+## Tipos e Valores Defaults <a name="tiposvaloresdefault"></a>
 ```java
     Tipos Primitivos:
         boolean: false
@@ -51,7 +73,7 @@ A maioria das informações foram absorvidas do curso " **[Java COMPLETO Program
     Tipos Especiais:
         String: ""
 ```
-## Casting
+## Casting <a name="casting"></a>
 ```java
 Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valor.
     Sintaxe:
@@ -73,7 +95,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
 
     - REF: https://www.w3schools.com/java/java_type_casting.asp
 ```
-## Caracteres Especiais
+## Caracteres Especiais <a name="caracteresespeciais"></a>
 ```java
     \n Quebra de linha (newline ou linefeed) 
     \r Retorno de carro (carriage return) 
@@ -85,7 +107,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
     \\ Barra invertida (“\”) 
     \u233d Caractere unicode de código 0x233d (hexadecimal)
 ```
-## Locale
+## Locale <a name="locale"></a>
 ```java
     import java.util.Locale;
 
@@ -93,7 +115,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
     Locale.setDefault(BRAZIL); - Definir o Locale
     Locale.setDefault(Locale.US); - Alguns Locale já são padrões e não precisa instânciar
 ```
-## Scanner
+## Scanner <a name="scanner"></a>
 ```java
     import java.util.Scanner;
 
@@ -107,7 +129,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
 
     sc.close(); - Destruir a instância
 ```
-## Math
+## Math <a name="math"></a>
 ```java
     Math.pow(2, 2) | 2 elevado a potencia de 2
     Math.sqrt(18) | raiz quadrada de 18
@@ -125,7 +147,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
     
     - REF: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
 ```
-## Strings
+## Strings <a name="string"></a>
 ```java
     Prints
         println(); Print Line | Concatenação + para usar variáveis
@@ -187,7 +209,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
             System.out.println(x[1]); // texto
             System.out.println(x[2]); // qualquer
 ```
-## Operadores
+## Operadores <a name="operadores"></a>
 ```java
     Aritméticos
         +, -, *, /, %
@@ -235,7 +257,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
                 int x = 0b1011001; // 89
                 System.out.println(0b100000); // 32             
 ```
-## If Else
+## If Else <a name="ifelse"></a>
 ```java
     If com apenas um comando não precisa de chaves {}
         if (condicao)
@@ -272,7 +294,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
             comando
         }
 ```
-## Switch Case
+## Switch Case <a name="switchcase"></a>
 ```java
     switch (var) {
         case condicao1:
@@ -289,7 +311,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
             break;
     }  
 ```
-## Expressão Condicional Ternária
+## Expressão Condicional Ternária <a name="ternario"></a>
 ```java
     ( condicao ) ? valor_se_verdadeiro : valor_se_falso;
 
@@ -299,7 +321,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
         Ou:
             String resultado =  ( 1 == 1 ) ? "Verdadeiro" : "Falso";
 ```
-## While
+## While <a name="while"></a>
 ```java
     Utilizado para quando não se sabe exatamente a quantidade de vezes que o problema irá se repetir
 
@@ -319,7 +341,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
         while( x < 10 )
             x++;
 ```
-## Do While
+## Do While <a name="dowhile"></a>
 ```java
     O bloco é executado pelo menos 1 vez, pois a verificação condicional só é feita no final.
 
@@ -338,7 +360,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
 
         sc.close();
 ```
-## For
+## For e ForEach <a name="for"></a>
 ```java
     Utilizado quando se sabe exatamente a quantidade de vezes que o problema irá se repetir
     
@@ -366,7 +388,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
             for (String fruta : frutas)
                 System.out.println(fruta);
 ```
-## Funções ou Métodos
+## Funções ou Métodos <a name="funcs"></a>
 ```java
     Sintaxe:
         [Encapsulamento] [Tipo] [Identificador] (Tipo Parametro) {
@@ -404,7 +426,7 @@ Para fazer casting em Java basta colocaar o tipo entre parênteses antes do valo
                 contador++;
             }
 ```
-## Vetores e Matrizes
+## Vetores e Matrizes <a name="vetores"></a>
 ```java
 Sintaxe:
     Tipo[] Identificador = {valor1, valor2, ..., nVALOR};
@@ -433,7 +455,7 @@ Sintaxe:
         alimentos[1][1] = "feijão";
         alimentos[1][2] = "macarrão";
 ```
-## Listas
+## Listas <a name="listas"></a>
 ```java
 import java.util.List;
 
@@ -461,7 +483,7 @@ Sintaxe:
 
     - REF: https://docs.oracle.com/javase/10/docs/api/java/util/List.html
 ```
-## Palavras Reservadas
+## Palavras Reservadas <a name="palavrasreservadas"></a>
 ```java
 Modificadores de acesso:
     private: acesso apenas dentro da classe
